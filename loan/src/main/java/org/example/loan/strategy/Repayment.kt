@@ -1,8 +1,7 @@
-package org.example.loan.strategy;
+package org.example.loan.strategy
 
-import org.example.loan.RepaymentScheduleItem;
-import java.util.List;
+import org.example.loan.RepaymentScheduleItem
 
-public interface Repayment {
-    List<RepaymentScheduleItem> getRepaymentSchedule(double principal, double annualRate, int months);
-} 
+interface Repayment {
+    fun getRepaymentSchedule(principal: Double, annualRate: Double, months: Int): MutableList<RepaymentScheduleItem>
+}
